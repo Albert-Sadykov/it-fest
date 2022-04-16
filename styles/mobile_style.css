@@ -1,0 +1,202 @@
+@media (max-width: 1000px) {
+	*{
+		font-size: 20px;
+	}
+
+	.tt-3{
+		font-size: 19px;
+	}
+
+	.menu{
+	position: fixed;
+	left: 0; top: 0;
+	width: 30%;
+	height: 100vh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	background-color: #fff;
+	transition: 1s;
+	transform: translateX(-100%);
+	z-index: 1000
+	}
+
+	.menu_active {
+		transform: translateX(0%);
+	}
+
+	.menu-list{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 90%;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+
+	.menu-btn{
+		width: 40px;
+		height: 40px;
+		background-color: rgba(255, 255, 255, 0);
+		position: absolute;
+		right: -45px;
+		top: 10px;
+	}
+
+	.menu-btn span, span::after, span::before{
+		position: absolute;
+		top: 50%; margin-top: -1px;
+		left: 50%; margin-left: -15px;
+		width: 30px;
+		height: 2px;
+		background-color: #000;
+		
+	}
+
+	.menu-btn span::before{
+		content: "";
+		display: block;
+		transition: 1s;
+		transform: translateY(-7px);
+	}
+
+	.menu-btn span::after{
+		content: "";
+		display: block;
+		transition: 1s;
+		transform: translateY(8px);
+	}
+
+	.menu-btn-active span{
+		height: 0;
+	}
+
+	.menu-btn-active span::before{
+		transform: rotate(45deg);
+	}
+
+	.menu-btn-active span::after{
+		transform: rotate(-45deg);
+	}
+
+	.title{
+		width: 100%;
+	}
+
+	.bad-img{
+		width: 50%
+	}
+}
+
+@media (max-width: 770px) {
+	.menu{
+		width: 80%
+	}
+
+	.tt-2{
+		font-size: 18px;
+	}
+
+	.img-l{
+		padding: 50px;
+		/* height: 50vh */
+	}
+
+	.flex-col{
+		flex-direction: column;
+		justify-content: space-between
+	}
+
+
+	.tt-3{
+		width: 100%;
+		font-size: 16px
+		/* margin: 10px 0; */
+	}
+
+	.flex-col .img{
+		display: none
+	}
+
+	.container{
+		width: 100%;
+	}
+
+	.landing-text{
+		width: 50%;
+	}
+
+	hr{
+		margin: 0;
+	}
+
+	.my-btn{
+		font-size: 16px;
+	}
+
+	.footer .container{
+		width: 100vw;
+	}
+
+	.slide {
+		width: 50%;
+		margin-left: 25%
+	}
+}
+
+@media (max-width: 550px) {
+	.tt-3{
+		font-size: 14px
+	}
+
+
+
+	.contact-box .tt-3{
+		font-size: 12px
+	}
+
+	.my-btn{
+		font-size: 14px;
+	}
+
+	.main{
+		flex-direction: column-reverse;
+		justify-content: center
+	}
+
+	.tt-2{
+		
+		font-size: 16px
+	}
+
+	.landing-text{
+		margin-top: 60px;
+		width: 100%;
+	}
+
+	.bad-img{
+		width: 80%;
+	}
+
+	.bad-img img{
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.login-box h2{
+		font-size: 24px
+	}
+}
+
+@media (max-width: 400px) {
+	.my-btn {
+		border-radius: 10px;
+		font-size: 12px;
+	}
+
+	.login-box h2{
+		font-size: 20px
+	}
+}
